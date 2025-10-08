@@ -9,14 +9,12 @@ import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
 
+/**
+ * Root layout for the Notes app.
+ * Wires QwikCity, head and body, and includes global styles.
+ */
+// PUBLIC_INTERFACE
 export default component$(() => {
-  /**
-   * The root of a QwikCity site always start with the <QwikCityProvider> component,
-   * immediately followed by the document's <head> and <body>.
-   *
-   * Don't remove the `<head>` and `<body>` elements.
-   */
-
   return (
     <QwikCityProvider>
       <head>
